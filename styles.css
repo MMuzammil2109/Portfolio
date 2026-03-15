@@ -863,48 +863,7 @@ body:hover .cursor-glow {
     opacity: 0.5;
 }
 
-.project-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(10, 15, 28, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: var(--transition);
-    z-index: 2;
-}
 
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
-
-.project-links {
-    display: flex;
-    gap: 16px;
-}
-
-.project-link {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: var(--gradient);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.1rem;
-    transform: translateY(20px);
-    transition: var(--transition);
-}
-
-.project-card:hover .project-link {
-    transform: translateY(0);
-}
-
-.project-link:hover {
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.5);
-}
 
 .project-body {
     padding: 24px;
