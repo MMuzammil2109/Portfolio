@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Muzammil | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;MM /&gt;</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Muhammad<br><span class="highlight">Muzammil</span></h1>
+                <div class="typewriter-wrapper">
+                    <span class="typewriter-label">I build </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    A passionate Software Engineer crafting scalable web applications 
+                    with Angular, React, .NET & Node.js
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Year Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-image-wrapper">
+                        <img src="profile.jpg" alt="Muhammad Muzammil" class="profile-image" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'profile-placeholder\'><i class=\'fas fa-user\'></i></div>'">
+                    </div>
+                    <div class="profile-ring"></div>
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="floating-badge badge-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos>
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text" data-aos>
+                    <p>
+                        I'm an energetic <strong>Software Engineer</strong> currently working at 
+                        <strong>MTBC, Azad Kashmir</strong>, where I design, develop, and maintain 
+                        enterprise-level web applications. I specialize in building full-stack solutions 
+                        using modern technologies.
+                    </p>
+                    <p>
+                        My journey in tech started with a <strong>BS in Software Engineering</strong> from 
+                        Air University, Islamabad. Since then, I've been passionate about solving complex 
+                        problems, optimizing system performance, and collaborating with cross-functional 
+                        teams to deliver stable, scalable releases.
+                    </p>
+                    <p>
+                        When I'm not coding, I'm exploring new frameworks, contributing to open-source 
+                        projects, or diving into emerging technologies to stay ahead of the curve.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sargodha, Pakistan</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-building"></i>
+                            <span>MTBC - Junior Software Engineer</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BS Software Engineering - Air University</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-code" data-aos>
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">muzammil.ts</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">interface</span> <span class="code-type">Developer</span> {
+  name: <span class="code-type">string</span>;
+  role: <span class="code-type">string</span>;
+  skills: <span class="code-type">string</span>[];
+  hardWorker: <span class="code-type">boolean</span>;
+  problemSolver: <span class="code-type">boolean</span>;
+}
+
+<span class="code-keyword">const</span> muzammil: <span class="code-type">Developer</span> = {
+  name: <span class="code-string">"Muhammad Muzammil"</span>,
+  role: <span class="code-string">"Software Engineer"</span>,
+  skills: [<span class="code-string">"Angular"</span>, <span class="code-string">"React"</span>,
+           <span class="code-string">".NET"</span>, <span class="code-string">"Node.js"</span>,
+           <span class="code-string">"SQL"</span>, <span class="code-string">"MongoDB"</span>],
+  hardWorker: <span class="code-keyword">true</span>,
+  problemSolver: <span class="code-keyword">true</span>,
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos>
+                <span class="section-number">02.</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Junior Software Engineer</h3>
+                                <p class="timeline-company">
+                                    <i class="fas fa-building"></i> MTBC, Azad Kashmir - Bagh
+                                </p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> Aug 2025 - Present
+                            </span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Designed, developed, and maintained enterprise-level web applications</li>
+                            <li>Worked extensively with Angular, TypeScript, SQL Server, and REST APIs to implement new features, fix production issues, and optimize performance</li>
+                            <li>Debugged complex issues including data inconsistencies, performance bottlenecks, and business-logic defects in stored procedures and application layers</li>
+                            <li>Collaborated with backend developers, frontend developers, QA engineers, and product stakeholders to analyze requirements, resolve defects, and deliver stable releases</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">.NET</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>IT Intern</h3>
+                                <p class="timeline-company">
+                                    <i class="fas fa-building"></i> MTBC, Islamabad
+                                </p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> Jun 2025 - Jul 2025
+                            </span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Assisted in application testing, development tasks, and troubleshooting technical issues</li>
+                            <li>Collaborated with software engineers and IT support teams to gain exposure to real-world IT operations</li>
+                            <li>Worked with databases, documentation, and internal systems while learning industry best practices</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Testing</span>
+                            <span class="tag">Databases</span>
+                            <span class="tag">IT Operations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos>
+                <span class="section-number">03.</span> Skills & Technologies
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-icon frontend">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><i class="fab fa-angular"></i> Angular</div>
+                        <div class="skill-chip"><i class="fab fa-react"></i> React</div>
+                        <div class="skill-chip"><i class="fab fa-flutter"></i> Flutter</div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-icon backend">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><i class="fas fa-code"></i> .NET</div>
+                        <div class="skill-chip"><i class="fab fa-node-js"></i> Node.js</div>
+                        <div class="skill-chip"><i class="fab fa-node"></i> Express</div>
+                        <div class="skill-chip"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-chip"><i class="fas fa-code"></i> C++</div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><i class="fas fa-database"></i> SQL Server</div>
+                        <div class="skill-chip"><i class="fas fa-leaf"></i> MongoDB</div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-icon tools">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Others</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-chip"><i class="fas fa-users"></i> Agile / Scrum</div>
+                        <div class="skill-chip"><i class="fas fa-bug"></i> Debugging</div>
+                        <div class="skill-chip"><i class="fas fa-vial"></i> Testing</div>
+                        <div class="skill-chip"><i class="fas fa-plug"></i> REST APIs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos>
+                <span class="section-number">04.</span> Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-featured">Featured Project</div>
+                        <h3 class="project-title">LearningLab - BGS Bagh</h3>
+                        <p class="project-description">
+                            A student learning platform focused on language practice and pronunciation 
+                            improvement. Features interactive exercises, quizzes, and progress tracking 
+                            for an enhanced learning experience.
+                        </p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>.NET</span>
+                            <span>SQL Server</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-featured">Featured Project</div>
+                        <h3 class="project-title">LabReach</h3>
+                        <p class="project-description">
+                            A healthcare booking platform connecting doctors and patients seamlessly. 
+                            Features appointment scheduling, patient-doctor communication, and 
+                            comprehensive booking management.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title" data-aos>
+                <span class="section-number">05.</span> Education
+            </h2>
+            <div class="education-grid">
+                <div class="education-card" data-aos>
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-year">2025</div>
+                    <h3>BS Software Engineering</h3>
+                    <p class="education-school">Air University, Islamabad</p>
+                </div>
+                <div class="education-card" data-aos>
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-year">2021</div>
+                    <h3>FSC Pre-Engineering</h3>
+                    <p class="education-school">ILM College, Sargodha</p>
+                </div>
+                <div class="education-card" data-aos>
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-year">2019</div>
+                    <h3>Matriculation - Science</h3>
+                    <p class="education-school">Azadi APS, Sargodha Cantt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos>
+                <span class="section-number">06.</span> Get In Touch
+            </h2>
+            <div class="contact-wrapper" data-aos>
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>
+                        I'm currently open to new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, feel free 
+                        to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:mmuzammil2109@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">mmuzammil2109@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+971551819700" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+971 55 181 9700</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Sargodha, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/" class="social-link" target="_blank" rel="noopener" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" class="social-link" target="_blank" rel="noopener" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:mmuzammil2109@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Portfolio Contact">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-logo">&lt;MM /&gt;</p>
+                <p>Designed & Built by Muhammad Muzammil</p>
+                <p class="footer-year">&copy; 2026 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
